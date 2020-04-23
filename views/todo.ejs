@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>To do list</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+        <script src="/assets/todo-list.js"></script>
+    </head>
+</html>
+<body>
+    <h1>My Family members</h1>
+    <div id="todo-table">
+        <form>
+            <input type="text" name="item" placeholder="Add new member.. Example: ( name, relationship )" required>
+            <button type="submit">Add member</button>
+        </form>
+        <ul>
+            <% for (var i = 0; i < todos.length; i++) { %>
+                <li data-key=<%= i %>>
+                    <%= todos[i].item %>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
