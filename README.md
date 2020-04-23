@@ -96,6 +96,8 @@ For templating .
 ```javascript
   node app
   ```
+and Hit
+ [http://localhost:3000/todo] to view it in the browser.
 
 ## Authors
 
